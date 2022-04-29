@@ -49,7 +49,7 @@
 //添加DoraemonJavaScriptPlugin
 [DoraemonJavaScriptPlugin installWithTitle:@"JS脚本" icon:[UIImage imageNamed:@"icon_js"] desc:@"用于在指定webView中执行JS代码" atModule:@"业务专区" handle:^(id  _Nullable result, NSError * _Nullable error) {
   //JS代码执行的返回结果
-	NSLog(@"result: %@", result);
+  NSLog(@"result: %@", result);
 }];
 ```
 
