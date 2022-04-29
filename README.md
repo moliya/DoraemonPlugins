@@ -45,7 +45,7 @@ pod 'DoraemonPlugins'
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/moliya/DoraemonPlugins", from: "1.0")
+    .package(url: "https://github.com/moliya/DoraemonPlugins", from: "1.2")
 ]
 ```
 

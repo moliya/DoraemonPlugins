@@ -93,7 +93,7 @@
             //使用第一个选项
             currentAction = [keyValues.firstObject objectForKey:@"key"];
             [NSUserDefaults.standardUserDefaults setObject:currentAction forKey:@"DoraemonEnvPluginCurrentKey"];
-            [NSUserDefaults.standardUserDefaults synchronize];
+            DoraemonEnvPlugin.shared.matched = YES;
         }
     }
     
@@ -113,7 +113,6 @@
             }
             //保存选项
             [NSUserDefaults.standardUserDefaults setObject:key forKey:@"DoraemonEnvPluginCurrentKey"];
-            [NSUserDefaults.standardUserDefaults synchronize];
             //回调
             if (DoraemonEnvPlugin.shared.handler) {
                 DoraemonEnvPlugin.shared.handler(key, value);

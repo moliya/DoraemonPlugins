@@ -86,6 +86,9 @@
     [self.items removeAllObjects];
     //读取plist数据
     NSArray *customItems = [NSUserDefaults.standardUserDefaults arrayForKey:@"DoraemonEnvPluginCustomItems"];
+    if (!customItems) {
+        customItems = @[];
+    }
     [self.items addObjectsFromArray:customItems];
 }
 
