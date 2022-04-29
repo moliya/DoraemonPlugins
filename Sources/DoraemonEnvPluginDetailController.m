@@ -6,8 +6,8 @@
 //
 
 #import "DoraemonEnvPluginDetailController.h"
-#import "DoraemonDefine.h"
-#import "DoraemonToastUtil.h"
+#import <DoraemonKit/DoraemonDefine.h>
+#import <DoraemonKit/DoraemonToastUtil.h>
 #import "DoraemonEnvPlugin.h"
 
 @interface DoraemonEnvPluginDetailController ()

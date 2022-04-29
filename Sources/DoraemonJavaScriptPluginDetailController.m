@@ -6,9 +6,9 @@
 //
 
 #import "DoraemonJavaScriptPluginDetailController.h"
-#import "DoraemonDefine.h"
-#import "DoraemonToastUtil.h"
-#import "DoraemonKit.h"
+#import <DoraemonKit/DoraemonDefine.h>
+#import <DoraemonKit/DoraemonToastUtil.h>
+#import <DoraemonKit/DoraemonKit.h>
 #import "DoraemonJavaScriptPlugin.h"
 
 @interface DoraemonJavaScriptPluginDetailController ()

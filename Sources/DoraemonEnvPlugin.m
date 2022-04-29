@@ -6,11 +6,11 @@
 //
 
 #import "DoraemonEnvPlugin.h"
-#import "DoraemonKit.h"
-#import "UIViewController+Doraemon.h"
-#import "UIViewController+DoraemonHierarchy.h"
-#import "DoraemonDefine.h"
-#import "DoraemonHomeWindow.h"
+#import <DoraemonKit/DoraemonKit.h>
+#import <DoraemonKit/UIViewController+Doraemon.h>
+#import <DoraemonKit/UIViewController+DoraemonHierarchy.h>
+#import <DoraemonKit/DoraemonDefine.h>
+#import <DoraemonKit/DoraemonHomeWindow.h>
 #import "DoraemonEnvPluginListController.h"
 
 @interface DoraemonEnvPlugin ()
