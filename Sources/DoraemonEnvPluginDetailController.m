@@ -6,12 +6,11 @@
 //
 
 #import "DoraemonEnvPluginDetailController.h"
-#import <DoraemonKit/DoraemonDefine.h>
-#import <DoraemonKit/UIColor+Doraemon.h>
-#import <DoraemonKit/DoraemonToastUtil.h>
+#import "DoraemonDefine.h"
+#import "DoraemonToastUtil.h"
 #import "DoraemonEnvPlugin.h"
 
-@interface DoraemonEnvPluginDetailController ()<UITextViewDelegate>
+@interface DoraemonEnvPluginDetailController ()
 
 @property (nonatomic, weak) UITextField *textField;
 @property (nonatomic, weak) UITextView  *textView;
@@ -24,7 +23,6 @@
     [super viewDidLoad];
     
     self.title = @"配置详情";
-    self.view.backgroundColor = UIColor.whiteColor;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveData)];
     UIEdgeInsets edge = UIEdgeInsetsMake(10, 10, 0, 10);
     CGFloat width = self.view.bounds.size.width - edge.left - edge.right;
@@ -41,22 +39,15 @@
     
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(edge.left, CGRectGetMaxY(valueLabel.frame) + edge.top, width, 200)];
     textView.layer.borderWidth = 1 / UIScreen.mainScreen.scale;
-    textView.layer.borderColor = [UIColor doraemon_colorWithHexString:@"#d5d5d5"].CGColor;
+    textView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     textView.layer.cornerRadius = 6;
     textView.font = [UIFont systemFontOfSize:16];
     textView.textContainerInset = UIEdgeInsetsMake(8, 3, 8, 3);
-    textView.delegate = self;
-    
-    UILabel *placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(7, 5, width - 10, 24)];
-    placeholderLabel.textColor = [UIColor doraemon_colorWithHexString:@"#c3c3c3"];
-    placeholderLabel.text = @"请输入配置数据";
-    placeholderLabel.hidden = self.key.length > 0;
     
     [self.view addSubview:titleLabel];
     [self.view addSubview:textField];
     [self.view addSubview:valueLabel];
     [self.view addSubview:textView];
-    [textView addSubview:placeholderLabel];
     self.textField = textField;
     self.textView = textView;
     
@@ -70,15 +61,6 @@
                 self.textView.text = value;
                 break;
             }
-        }
-    }
-}
-
-#pragma mark - UITextViewDelegate
-- (void)textViewDidChange:(UITextView *)textView {
-    for (UIView *subview in textView.subviews) {
-        if ([subview isKindOfClass:UILabel.class]) {
-            subview.hidden = textView.text.length > 0;
         }
     }
 }

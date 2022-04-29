@@ -7,6 +7,7 @@
 
 #import "Constant.h"
 
+NSString *appEnv = @"release";
 NSString *apiUrl = @"https://api.domain.com";
 NSString *cdnUrl = @"https://cdn.domain.com";
 NSString *thirdSDKAppKey = @"c56d0e9a7ccec67b4ea131655038d604";

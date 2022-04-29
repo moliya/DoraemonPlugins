@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17241CF4281A93F2001D2FC1 /* DoraemonJavaScriptPluginListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17241CF3281A93F2001D2FC1 /* DoraemonJavaScriptPluginListController.m */; };
+		17241CF7281A9F9B001D2FC1 /* DoraemonJavaScriptPluginDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17241CF6281A9F9B001D2FC1 /* DoraemonJavaScriptPluginDetailController.m */; };
+		17241D01281B7E4E001D2FC1 /* EnvPluginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17241D00281B7E4E001D2FC1 /* EnvPluginExampleController.m */; };
+		17241D04281B7E64001D2FC1 /* ScriptPluginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17241D03281B7E64001D2FC1 /* ScriptPluginExampleController.m */; };
+		17BE5E92281689B200A03035 /* DoraemonJavaScriptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BE5E91281689B200A03035 /* DoraemonJavaScriptPlugin.m */; };
 		17D97A702665D3E4001F5DB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D97A6F2665D3E4001F5DB9 /* AppDelegate.m */; };
-		17D97A762665D3E4001F5DB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D97A752665D3E4001F5DB9 /* ViewController.m */; };
 		17D97A792665D3E4001F5DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A772665D3E4001F5DB9 /* Main.storyboard */; };
 		17D97A7B2665D3E7001F5DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A7A2665D3E7001F5DB9 /* Assets.xcassets */; };
 		17D97A7E2665D3E7001F5DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A7C2665D3E7001F5DB9 /* LaunchScreen.storyboard */; };
@@ -22,11 +26,19 @@
 
 /* Begin PBXFileReference section */
 		164CFC54BCDC3C6A853935B2 /* libPods-DoraemonPluginsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoraemonPluginsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17241CF2281A93F2001D2FC1 /* DoraemonJavaScriptPluginListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoraemonJavaScriptPluginListController.h; path = Sources/DoraemonJavaScriptPluginListController.h; sourceTree = SOURCE_ROOT; };
+		17241CF3281A93F2001D2FC1 /* DoraemonJavaScriptPluginListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoraemonJavaScriptPluginListController.m; path = Sources/DoraemonJavaScriptPluginListController.m; sourceTree = SOURCE_ROOT; };
+		17241CF5281A9F9B001D2FC1 /* DoraemonJavaScriptPluginDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoraemonJavaScriptPluginDetailController.h; path = Sources/DoraemonJavaScriptPluginDetailController.h; sourceTree = SOURCE_ROOT; };
+		17241CF6281A9F9B001D2FC1 /* DoraemonJavaScriptPluginDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoraemonJavaScriptPluginDetailController.m; path = Sources/DoraemonJavaScriptPluginDetailController.m; sourceTree = SOURCE_ROOT; };
+		17241CFF281B7E4E001D2FC1 /* EnvPluginExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvPluginExampleController.h; sourceTree = "<group>"; };
+		17241D00281B7E4E001D2FC1 /* EnvPluginExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnvPluginExampleController.m; sourceTree = "<group>"; };
+		17241D02281B7E64001D2FC1 /* ScriptPluginExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScriptPluginExampleController.h; sourceTree = "<group>"; };
+		17241D03281B7E64001D2FC1 /* ScriptPluginExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScriptPluginExampleController.m; sourceTree = "<group>"; };
+		17BE5E90281689B200A03035 /* DoraemonJavaScriptPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoraemonJavaScriptPlugin.h; path = Sources/DoraemonJavaScriptPlugin.h; sourceTree = SOURCE_ROOT; };
+		17BE5E91281689B200A03035 /* DoraemonJavaScriptPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoraemonJavaScriptPlugin.m; path = Sources/DoraemonJavaScriptPlugin.m; sourceTree = SOURCE_ROOT; };
 		17D97A6B2665D3E4001F5DB9 /* DoraemonPluginsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoraemonPluginsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D97A6E2665D3E4001F5DB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17D97A6F2665D3E4001F5DB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17D97A742665D3E4001F5DB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		17D97A752665D3E4001F5DB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		17D97A782665D3E4001F5DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17D97A7A2665D3E7001F5DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17D97A7D2665D3E7001F5DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +76,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		17241CFE281B7D29001D2FC1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				17241CFF281B7E4E001D2FC1 /* EnvPluginExampleController.h */,
+				17241D00281B7E4E001D2FC1 /* EnvPluginExampleController.m */,
+				17241D02281B7E64001D2FC1 /* ScriptPluginExampleController.h */,
+				17241D03281B7E64001D2FC1 /* ScriptPluginExampleController.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		17D97A622665D3E4001F5DB9 = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				17D97A872665D6F8001F5DB9 /* Sources */,
+				17241CFE281B7D29001D2FC1 /* Example */,
 				17D97A6E2665D3E4001F5DB9 /* AppDelegate.h */,
 				17D97A6F2665D3E4001F5DB9 /* AppDelegate.m */,
-				17D97A742665D3E4001F5DB9 /* ViewController.h */,
-				17D97A752665D3E4001F5DB9 /* ViewController.m */,
 				17D97A772665D3E4001F5DB9 /* Main.storyboard */,
 				17D97A7A2665D3E7001F5DB9 /* Assets.xcassets */,
 				17D97A7C2665D3E7001F5DB9 /* LaunchScreen.storyboard */,
@@ -110,6 +132,12 @@
 				17D97A8F26664627001F5DB9 /* DoraemonEnvPluginListController.m */,
 				17D97A912666463E001F5DB9 /* DoraemonEnvPluginDetailController.h */,
 				17D97A922666463E001F5DB9 /* DoraemonEnvPluginDetailController.m */,
+				17BE5E90281689B200A03035 /* DoraemonJavaScriptPlugin.h */,
+				17BE5E91281689B200A03035 /* DoraemonJavaScriptPlugin.m */,
+				17241CF2281A93F2001D2FC1 /* DoraemonJavaScriptPluginListController.h */,
+				17241CF3281A93F2001D2FC1 /* DoraemonJavaScriptPluginListController.m */,
+				17241CF5281A9F9B001D2FC1 /* DoraemonJavaScriptPluginDetailController.h */,
+				17241CF6281A9F9B001D2FC1 /* DoraemonJavaScriptPluginDetailController.m */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -236,12 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D97A762665D3E4001F5DB9 /* ViewController.m in Sources */,
+				17BE5E92281689B200A03035 /* DoraemonJavaScriptPlugin.m in Sources */,
+				17241CF7281A9F9B001D2FC1 /* DoraemonJavaScriptPluginDetailController.m in Sources */,
+				17241D04281B7E64001D2FC1 /* ScriptPluginExampleController.m in Sources */,
 				17D97A702665D3E4001F5DB9 /* AppDelegate.m in Sources */,
 				17D97A812665D3E7001F5DB9 /* main.m in Sources */,
 				17D97A8D2665E2B1001F5DB9 /* Constant.m in Sources */,
 				17D97A8A2665D770001F5DB9 /* DoraemonEnvPlugin.m in Sources */,
 				17D97A932666463E001F5DB9 /* DoraemonEnvPluginDetailController.m in Sources */,
+				17241D01281B7E4E001D2FC1 /* EnvPluginExampleController.m in Sources */,
+				17241CF4281A93F2001D2FC1 /* DoraemonJavaScriptPluginListController.m in Sources */,
 				17D97A9026664627001F5DB9 /* DoraemonEnvPluginListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7MVTW2AF4;
 				INFOPLIST_FILE = DoraemonPluginsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,6 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7MVTW2AF4;
 				INFOPLIST_FILE = DoraemonPluginsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

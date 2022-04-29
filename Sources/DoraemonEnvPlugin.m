@@ -6,11 +6,11 @@
 //
 
 #import "DoraemonEnvPlugin.h"
-#import <DoraemonKit/DoraemonKit.h>
-#import <DoraemonKit/UIViewController+Doraemon.h>
-#import <DoraemonKit/UIViewController+DoraemonHierarchy.h>
-#import <DoraemonKit/DoraemonDefine.h>
-#import <DoraemonKit/DoraemonHomeWindow.h>
+#import "DoraemonKit.h"
+#import "UIViewController+Doraemon.h"
+#import "UIViewController+DoraemonHierarchy.h"
+#import "DoraemonDefine.h"
+#import "DoraemonHomeWindow.h"
 #import "DoraemonEnvPluginListController.h"
 
 @interface DoraemonEnvPlugin ()
@@ -26,11 +26,11 @@
 #pragma mark - Public
 + (void)installWithTitle:(NSString *)title icon:(id)imageOrString desc:(NSString *)desc atModule:(NSString *)moduleName handle:(void (^)(NSString * _Nonnull, NSString * _Nonnull))handleBlock {
     if ([imageOrString isKindOfClass:UIImage.class]) {
-        [DoraemonManager.shareInstance addPluginWithTitle:title image:(UIImage *)imageOrString desc:desc pluginName:@"" atModule:moduleName handle:^(NSDictionary * _Nonnull itemData) {
+        [DoraemonManager.shareInstance addPluginWithTitle:title image:(UIImage *)imageOrString desc:desc pluginName:@"DoraemonEnvPlugin" atModule:moduleName handle:^(NSDictionary * _Nonnull itemData) {
             [self privateHandle:itemData];
         }];
     } else if ([imageOrString isKindOfClass:NSString.class]) {
-        [DoraemonManager.shareInstance addPluginWithTitle:title icon:(NSString *)imageOrString desc:desc pluginName:@"" atModule:moduleName handle:^(NSDictionary * _Nonnull itemData) {
+        [DoraemonManager.shareInstance addPluginWithTitle:title icon:(NSString *)imageOrString desc:desc pluginName:@"DoraemonEnvPlugin" atModule:moduleName handle:^(NSDictionary * _Nonnull itemData) {
             [self privateHandle:itemData];
         }];
     }

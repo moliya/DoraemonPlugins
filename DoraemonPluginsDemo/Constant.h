@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+FOUNDATION_EXTERN NSString *appEnv;
 FOUNDATION_EXTERN NSString *apiUrl;
 FOUNDATION_EXTERN NSString *cdnUrl;
 FOUNDATION_EXTERN NSString *thirdSDKAppKey;

@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"配置列表";
-    self.view.backgroundColor = UIColor.whiteColor;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addCustomItem)];
     self.items = [NSMutableArray array];
@@ -50,10 +49,9 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     }
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = [self.items[indexPath.row] objectForKey:@"key"];
     cell.detailTextLabel.text = [self.items[indexPath.row] objectForKey:@"value"];
-    cell.detailTextLabel.textColor = UIColor.grayColor;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 

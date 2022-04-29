@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "DoraemonPlugins"
-  s.version       = "1.1"
+  s.version       = "1.2"
   s.summary       = "DoraemonKit插件"
   s.homepage      = "https://github.com/moliya/DoraemonPlugins"
   s.license       = "MIT"

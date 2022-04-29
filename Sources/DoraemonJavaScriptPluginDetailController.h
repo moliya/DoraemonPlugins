@@ -1,15 +1,15 @@
 //
-//  DoraemonEnvPluginDetailController.h
+//  DoraemonJavaScriptPluginDetailController.h
 //  DoraemonPluginsDemo
 //
-//  Created by carefree on 2021/6/1.
+//  Created by carefree on 2022/4/28.
 //
 
 #import "DoraemonBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DoraemonEnvPluginDetailController : DoraemonBaseViewController
+@interface DoraemonJavaScriptPluginDetailController : DoraemonBaseViewController
 
 @property (nonatomic, copy) NSString    *key;
 
