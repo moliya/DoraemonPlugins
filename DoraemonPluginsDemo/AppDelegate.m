@@ -14,7 +14,6 @@
 
 #ifdef DEBUG
 #import "DoraemonEnvPlugin.h"
-#import "DoraemonJavaScriptPlugin.h"
 #endif
 
 @interface AppDelegate ()
@@ -41,11 +40,6 @@
     }];
     [DoraemonEnvPlugin addDefaultEnv:@"正式环境" withData:@"{\"appEnv\":\"release\",\"apiUrl\":\"https://api.domain.com\",\"cdnUrl\":\"https://cdn.domain.com\",\"thirdSDKAppKey\":\"c56d0e9a7ccec67b4ea131655038d604\"}"];
     [DoraemonEnvPlugin addDefaultEnv:@"测试环境" withData:@"{\"appEnv\":\"debug\",\"apiUrl\":\"https://test-api.domain.com\",\"cdnUrl\":\"https://test-cdn.domain.com\",\"thirdSDKAppKey\":\"7a9e4b5025a8adc7d3208fd66806d685\"}"];
-    
-    [DoraemonJavaScriptPlugin installWithTitle:@"JS脚本" icon:[UIImage imageNamed:@"icon_js"] desc:@"用于在指定webView中执行JS代码" atModule:@"业务专区" handle:^(id  _Nullable result, NSError * _Nullable error) {
-        NSLog(@"result: %@", result);
-        NSLog(@"error: %@", error.localizedDescription);
-    }];
     
     [DoraemonManager.shareInstance install];
 #endif
