@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "DoraemonPlugins"
-  s.version       = "1.3"
+  s.version       = "1.4"
   s.summary       = "DoraemonKit插件"
   s.homepage      = "https://github.com/moliya/DoraemonPlugins"
   s.license       = "MIT"
@@ -10,8 +10,6 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
   s.platform      = :ios, '9.0'
   
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.dependency 'DoraemonKit/Core'
 
   s.source_files  = "Sources/*"
