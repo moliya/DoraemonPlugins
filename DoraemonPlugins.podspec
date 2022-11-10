@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.author        = {'Carefree' => '946715806@qq.com'}
   s.source        = { :git => "https://github.com/moliya/DoraemonPlugins.git", :tag => s.version}
   s.requires_arc  = true
-  s.platform      = :ios, '9.0'
+  s.ios.deployment_target = '9.0'
   
-  s.dependency 'DoraemonKit/Core'
+  s.dependency 'DoraemonKit'
 
   s.source_files  = "Sources/*"
   

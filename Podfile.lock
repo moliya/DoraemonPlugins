@@ -1,9 +1,13 @@
 PODS:
-  - DoraemonKit/Core (3.0.7):
+  - DoraemonKit (3.1.3):
+    - DoraemonKit/Core (= 3.1.3)
+  - DoraemonKit/Core (3.1.3):
     - FMDB
     - GCDWebServer
     - GCDWebServer/WebDAV
     - GCDWebServer/WebUploader
+  - DoraemonPlugins (1.4):
+    - DoraemonKit
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -16,7 +20,7 @@ PODS:
     - GCDWebServer/Core
 
 DEPENDENCIES:
-  - DoraemonKit/Core
+  - DoraemonPlugins (from `./`)
 
 SPEC REPOS:
   trunk:
@@ -24,11 +28,16 @@ SPEC REPOS:
     - FMDB
     - GCDWebServer
 
+EXTERNAL SOURCES:
+  DoraemonPlugins:
+    :path: "./"
+
 SPEC CHECKSUMS:
-  DoraemonKit: 32fb97f3aa82efa133111d193080ca5462cef135
+  DoraemonKit: 7448814a80d9ca56bc8db9105c464b7ec2e62623
+  DoraemonPlugins: e38c0bdad9734c4f70a936eacd8ec00cb4a0c400
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
 
-PODFILE CHECKSUM: 44c52c3f8556fd61ffcc627957c1d30670b0a8ba
+PODFILE CHECKSUM: 2da52f3da0d36914e651422a694552861fbb8981
 
 COCOAPODS: 1.11.3

@@ -1,5 +1,6 @@
+source 'https://cdn.cocoapods.org/'
 platform :ios, '9.0'
 
 target 'DoraemonPluginsDemo' do
-	pod 'DoraemonKit/Core'
+  pod 'DoraemonPlugins', :path => './', :configurations => ['Debug']
 end

@@ -14,10 +14,7 @@
 		17D97A7B2665D3E7001F5DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A7A2665D3E7001F5DB9 /* Assets.xcassets */; };
 		17D97A7E2665D3E7001F5DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A7C2665D3E7001F5DB9 /* LaunchScreen.storyboard */; };
 		17D97A812665D3E7001F5DB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D97A802665D3E7001F5DB9 /* main.m */; };
-		17D97A8A2665D770001F5DB9 /* DoraemonEnvPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D97A892665D770001F5DB9 /* DoraemonEnvPlugin.m */; };
 		17D97A8D2665E2B1001F5DB9 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D97A8C2665E2B1001F5DB9 /* Constant.m */; };
-		17D97A9026664627001F5DB9 /* DoraemonEnvPluginListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D97A8F26664627001F5DB9 /* DoraemonEnvPluginListController.m */; };
-		17D97A932666463E001F5DB9 /* DoraemonEnvPluginDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D97A922666463E001F5DB9 /* DoraemonEnvPluginDetailController.m */; };
 		F7397359BDFA7176AE5CE743 /* libPods-DoraemonPluginsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 164CFC54BCDC3C6A853935B2 /* libPods-DoraemonPluginsDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -35,14 +32,8 @@
 		17D97A7D2665D3E7001F5DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17D97A7F2665D3E7001F5DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17D97A802665D3E7001F5DB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		17D97A882665D770001F5DB9 /* DoraemonEnvPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoraemonEnvPlugin.h; path = Sources/DoraemonEnvPlugin.h; sourceTree = SOURCE_ROOT; };
-		17D97A892665D770001F5DB9 /* DoraemonEnvPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoraemonEnvPlugin.m; path = Sources/DoraemonEnvPlugin.m; sourceTree = SOURCE_ROOT; };
 		17D97A8B2665E2B1001F5DB9 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		17D97A8C2665E2B1001F5DB9 /* Constant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
-		17D97A8E26664627001F5DB9 /* DoraemonEnvPluginListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoraemonEnvPluginListController.h; path = Sources/DoraemonEnvPluginListController.h; sourceTree = SOURCE_ROOT; };
-		17D97A8F26664627001F5DB9 /* DoraemonEnvPluginListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoraemonEnvPluginListController.m; path = Sources/DoraemonEnvPluginListController.m; sourceTree = SOURCE_ROOT; };
-		17D97A912666463E001F5DB9 /* DoraemonEnvPluginDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoraemonEnvPluginDetailController.h; path = Sources/DoraemonEnvPluginDetailController.h; sourceTree = SOURCE_ROOT; };
-		17D97A922666463E001F5DB9 /* DoraemonEnvPluginDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoraemonEnvPluginDetailController.m; path = Sources/DoraemonEnvPluginDetailController.m; sourceTree = SOURCE_ROOT; };
 		2846DA2A809773D0CF168889 /* Pods-DoraemonPluginsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoraemonPluginsDemo.release.xcconfig"; path = "Target Support Files/Pods-DoraemonPluginsDemo/Pods-DoraemonPluginsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B8DE0DF21E445448616E0EE5 /* Pods-DoraemonPluginsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoraemonPluginsDemo.debug.xcconfig"; path = "Target Support Files/Pods-DoraemonPluginsDemo/Pods-DoraemonPluginsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +90,6 @@
 		17D97A6D2665D3E4001F5DB9 /* DoraemonPluginsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				17D97A872665D6F8001F5DB9 /* Sources */,
 				17241CFE281B7D29001D2FC1 /* Example */,
 				17D97A6E2665D3E4001F5DB9 /* AppDelegate.h */,
 				17D97A6F2665D3E4001F5DB9 /* AppDelegate.m */,
@@ -112,19 +102,6 @@
 				17D97A8C2665E2B1001F5DB9 /* Constant.m */,
 			);
 			path = DoraemonPluginsDemo;
-			sourceTree = "<group>";
-		};
-		17D97A872665D6F8001F5DB9 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				17D97A882665D770001F5DB9 /* DoraemonEnvPlugin.h */,
-				17D97A892665D770001F5DB9 /* DoraemonEnvPlugin.m */,
-				17D97A8E26664627001F5DB9 /* DoraemonEnvPluginListController.h */,
-				17D97A8F26664627001F5DB9 /* DoraemonEnvPluginListController.m */,
-				17D97A912666463E001F5DB9 /* DoraemonEnvPluginDetailController.h */,
-				17D97A922666463E001F5DB9 /* DoraemonEnvPluginDetailController.m */,
-			);
-			name = Sources;
 			sourceTree = "<group>";
 		};
 		805F75F890141D205F612286 /* Pods */ = {
@@ -253,10 +230,7 @@
 				17D97A702665D3E4001F5DB9 /* AppDelegate.m in Sources */,
 				17D97A812665D3E7001F5DB9 /* main.m in Sources */,
 				17D97A8D2665E2B1001F5DB9 /* Constant.m in Sources */,
-				17D97A8A2665D770001F5DB9 /* DoraemonEnvPlugin.m in Sources */,
-				17D97A932666463E001F5DB9 /* DoraemonEnvPluginDetailController.m in Sources */,
 				17241D01281B7E4E001D2FC1 /* EnvPluginExampleController.m in Sources */,
-				17D97A9026664627001F5DB9 /* DoraemonEnvPluginListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

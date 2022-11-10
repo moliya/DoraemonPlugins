@@ -13,7 +13,7 @@
 #endif
 
 #ifdef DEBUG
-#import "DoraemonEnvPlugin.h"
+#import <DoraemonPlugins/DoraemonEnvPlugin.h>
 #endif
 
 @interface AppDelegate ()
